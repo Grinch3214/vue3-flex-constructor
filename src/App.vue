@@ -22,7 +22,7 @@
 			<SelectVue :select="FLEXWRAP" @emit-value="handleWrap" />
 		</li>
 		<li>
-			<p>Flex Wrap:</p>
+			<p>Flex Direction:</p>
 			<SelectVue :select="FLEXDIRECTION" @emit-value="handleDirection" />
 		</li>
 	</ul>
