@@ -8,7 +8,7 @@ The goal of the project was the visual use of flex properties.
 
  ## Preview
 
-<img src="https://github.com/Grinch3214/vue3-flex-constructor/blob/main/demo/flex.gif" />
+<img src="https://github.com/Grinch3214/vue3-flex-constructor/blob/master/demo/flex.gif" />
 
 ---
 
