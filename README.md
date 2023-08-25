@@ -1,14 +1,14 @@
 # Flex-constructor
 a live project with [vueJs](http://vuejs.org)
 
-<!-- ## Demo
- Go to https://grinch3214.github.io/vue3-nasa-project/ -->
+The goal of the project was the visual use of flex properties.
 
- <!-- ## Preview
+## Demo
+ Go to https://grinch3214.github.io/vue3-flex-constructor/
 
-<img src="https://github.com/Grinch3214/vue3-nasa-project/blob/main/demo/Screenshot_2.png" width=500 />
+ ## Preview
 
-<img src="https://github.com/Grinch3214/vue3-nasa-project/blob/main/demo/demoGif.gif" /> -->
+<img src="https://github.com/Grinch3214/vue3-flex-constructor/blob/main/demo/flex.gif" />
 
 ---
 
