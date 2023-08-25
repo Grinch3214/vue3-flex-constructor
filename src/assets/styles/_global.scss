@@ -7,6 +7,22 @@ body {
 
 .flex-container {
 	@include container;
+	background: rgba(255, 196, 0, 0.1);
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		content: 'FLEX CONTAINER';
+		font-weight: 600;
+		white-space: nowrap;
+		font-size: 18vh;
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: .1;
+	}
 }
 
 .flex-element {
@@ -15,7 +31,7 @@ body {
 	line-height: 3.4rem;
 	text-align: center;
 	color: $white-color;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .select-container {
@@ -32,7 +48,7 @@ body {
 	}
 
 	p {
-		font-weight: 700;
+		font-weight: 800;
 		font-size: 1.8rem;
 	}
 }
