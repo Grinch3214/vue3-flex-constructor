@@ -10,12 +10,31 @@ body {
 }
 
 .flex-element {
-	width: 150px;
-	padding: 0.5rem;
+	padding: 0.5rem 4rem;
 	font-size: 2.8rem;
 	line-height: 3.4rem;
 	text-align: center;
 	color: $white-color;
+	font-weight: 700;
+}
+
+.select-container {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+
+	li {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	p {
+		font-weight: 700;
+		font-size: 1.8rem;
+	}
 }
 
 .red {
