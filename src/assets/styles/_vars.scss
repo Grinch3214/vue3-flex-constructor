@@ -7,11 +7,12 @@ $yellow-color: rgb(221, 221, 47);
 $orange-color: rgb(253, 173, 24);
 $green-color: rgb(43, 190, 43);
 $blue-color: rgb(29, 29, 199);
+$violet-color: rgb(117, 4, 117);
 
 @mixin container {
-	padding: 0 2rem;
 	margin: 2rem;
 	border: .5rem solid $orange-color;
 	height: 75vh;
 	display: flex;
+	align-items: flex-start;
 }
