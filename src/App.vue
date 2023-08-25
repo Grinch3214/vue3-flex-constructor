@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-container">
+  <div class="flex-container" :style="[result[0].value, result[1].value]">
 		<div
 		  v-for="item in flexElement"
 		  :key="item"
@@ -8,10 +8,34 @@
 			{{ item }}
 		</div>
 	</div>
+	<div>
+		<SelectVue :select="JUSTIFYCONTENT" @emit-value="handleJustifyContent"/>
+		<SelectVue :select="ALIGNITEMS" @emit-value="handleAlignItems"/>
+	</div>
 </template>
 
 <script setup>
+	import { ref, computed } from 'vue'
+	import { JUSTIFYCONTENT, ALIGNITEMS } from './constans.js'
+	import SelectVue from './components/SelectVue.vue'
 	const flexElement = ['red', 'yellow', 'green', 'blue', 'violet']
+
+	const currentJustifyContent = ref('flex-start')
+	const currentAlignItems = ref('flex-start')
+
+	const handleJustifyContent = (value) => {
+		currentJustifyContent.value = value
+	}
+	const handleAlignItems = (value) => {
+		currentAlignItems.value = value
+	}
+
+	const result = computed(() => {
+		return [
+		{ value: `justify-content: ${currentJustifyContent.value};` },
+		{ value: `align-items: ${currentAlignItems.value};` }
+		]
+	})
 </script>
 
 <style lang="scss">

@@ -10,7 +10,6 @@ $blue-color: rgb(29, 29, 199);
 $violet-color: rgb(117, 4, 117);
 
 @mixin container {
-	margin: 2rem;
 	border: .5rem solid $orange-color;
 	height: 75vh;
 	display: flex;
